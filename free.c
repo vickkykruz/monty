@@ -1,4 +1,6 @@
 #include "main.h"
+global_str stru;
+
 /**
  * f_stack - This is a function that free the stack
  * @h: This is an argument that reprsent the head of the stack

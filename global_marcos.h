@@ -9,10 +9,8 @@
 { \
 	{"push", opcode_push}, \
 	{"pall", opcode_pall}, \
-	{"mul", opcode_mul}, \
 	{"pint", opcode_pint}, \
 	{"pop", opcode_pop}, \
-	{"div", opcode_div}, \
 	{NULL, NULL}, \
 }
 

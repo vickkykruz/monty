@@ -36,8 +36,8 @@ void opcode_pint(stack_t **, unsigned int);
 void opcode_pop(stack_t **, unsigned int);
 
 /** OP_MUL_DIV.C FILE **/
-void opcode_div(stack_t **, unsigned int);
-void opcode_mul(stack_t **, unsigned int);
+/* void opcode_div(stack_t **, unsigned int); */
+/* void opcode_mul(stack_t **, unsigned int); */
 
 /** FUNC.C FILE **/
 void is_digit(unsigned int);

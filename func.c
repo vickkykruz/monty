@@ -6,7 +6,7 @@
  *
  * Return: The function return the converted string
  */
-char *_itoa(int num)
+/* char *_itoa(int num)
 {
 	char *ptr;
 	int len;
@@ -21,7 +21,8 @@ char *_itoa(int num)
 
 	sprintf(ptr, "%d", num);
 	return (ptr);
-}
+} */
+
 /**
  * is_digit - This is a function that check if the array of chars is a number
  * @cmd_line: This is an argument that reprsent the number command line
