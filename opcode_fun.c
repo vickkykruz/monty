@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * analysis_opcode - This is a function that return the associated function to
+ * analysis_opcode - This is a function that returns the associated function to
  * an opcode
  * @stack: This is an argument that reprsent the opcode passed
  * @s: This is an argument that reprsent the given string
