@@ -1,4 +1,4 @@
-## C - Stacks, Queues - LIFO, FIFO
+### C - Stacks, Queues - LIFO, FIFO
 
 <p align="center"><img src="https://pbs.twimg.com/media/CFYYWy6UEAE9Ow-.png" alt="Stack, Queues, - LIFO, FIFO"/></p>
 
