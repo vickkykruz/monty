@@ -48,6 +48,12 @@ void opcode_sub(stack_t **, unsigned int);
 void opcode_div(stack_t **, unsigned int);
 void opcode_mul(stack_t **, unsigned int);
 
+/** OP_PCHAR_PSTR.C FILE **/
+void opcode_pstr(stack_t **, unsigned int);
+
+/** OP_MOD.C FILE **/
+void opcode_mod(stack_t **, unsigned int);
+
 /** FUNC.C FILE **/
 int is_digit(char *str);
 #endif

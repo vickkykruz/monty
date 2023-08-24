@@ -17,6 +17,8 @@
 	{"sub", opcode_sub}, \
 	{"div", opcode_div}, \
 	{"mul", opcode_mul}, \
+	{"mod", opcode_mod}, \
+	{"pstr", opcode_pstr}, \
 	{NULL, NULL}, \
 }
 /**
