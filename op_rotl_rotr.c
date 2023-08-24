@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * opcode_rotl - This is a function that return the first elememt of the stack
+ * opcode_rotl - This is a function that retur the first elememt of the stack
  * @stack: This is an argument that reprsent the given stack head
  * @l_cnt: This is an argumemt that rprsent the amount of argument passed
  *
