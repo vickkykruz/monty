@@ -1,7 +1,7 @@
-#include "main.h"
+#include "monty.h"
 /**
- * pint - This is a function that return the printed value at the to of the
- * stack
+ * opcode_pint - This is a function that return the printed value at the to
+ * of the stack
  * @stack: This is an argument that reprsent the given stack
  * @cmd_line: This is an argument that reprsent the amount of lines passed
  *

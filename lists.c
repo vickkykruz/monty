@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * add_node - This is a function that return the added nodde of a stack_t
  * @stack: This is an argument that reprsent the given stack head

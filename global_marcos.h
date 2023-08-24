@@ -13,7 +13,6 @@
 	{"pop", opcode_pop}, \
 	{NULL, NULL}, \
 }
-
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -25,9 +24,9 @@
  */
 typedef struct stack_s
 {
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
+	int n;
+	struct stack_s *prev;
+	struct stack_s *next;
 } stack_t;
 
 /**
@@ -40,19 +39,16 @@ typedef struct stack_s
  */
 typedef struct instruction_s
 {
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
+	char *opcode;
+	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
 /**
  * struct global_s - This is a global structure
- * @str: This argument reprsent the number of arguments passed
- * @file: This argument reprsent the given path file
- * @buffer: This argument reprsent the number of buffer passed
- * @isstack: This is an argument that reprsent if the argument passed is a stack
- * @stack: This is an arguments that reprsent the given stack
- * Description: This struction is to handle and store and arguemt so as to be used
+ * @args: This argument reprsent the number of arguments passed
+ * @data: This argument reprsent the given path file
  *
+ * Description: This is to handle and store and args so as to be used
  */
 typedef struct global_s
 {

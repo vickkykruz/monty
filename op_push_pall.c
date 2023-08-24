@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * opcode_push - This is a function that return the pushed element to stack
  * @stack: This is an argument that reprsent the given stack

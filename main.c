@@ -1,5 +1,5 @@
 #define _POSIX_C_SOURCE 200809L
-#include "main.h"
+#include "monty.h"
 /**
  * file_err - This is a function that display the file error message
  * @argv: This is an argument that revent the vector index 1

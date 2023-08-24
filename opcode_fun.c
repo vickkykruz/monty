@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * analysis_opcode - This is a function that return the associated function to
  * an opcode

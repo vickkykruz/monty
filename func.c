@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * is_digit - This is a function check if a string is a digit
  * @str: This is an argument that reprsent the given string
