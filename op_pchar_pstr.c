@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * opcode_pstr - This is a function that return the printed content of the
+ * opcode_pstr - a function that return the printed content of the
  * stack_t stuct as a sting
  * @stack: This is an argument that reprsent the given stack
  * @l_cnt: This is an argument that rprsent the amount of argumemt passed
