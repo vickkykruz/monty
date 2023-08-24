@@ -4,7 +4,7 @@
  * @stack: This is an argument that reprsent the given stack
  * @cmd_line: This is an argument that reprsent the amount of cmd_line passed
  *
- * Return: This function return a void (nothing)
+ * Return: This function returns void (nothing)
  */
 void opcode_pop(stack_t **stack, unsigned int cmd_line)
 {
