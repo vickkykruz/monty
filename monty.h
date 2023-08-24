@@ -34,6 +34,9 @@ void opcode_pint(stack_t **, unsigned int);
 /** OP_POP.C FILE **/
 void opcode_pop(stack_t **, unsigned int);
 
+/** OP_SWAP.C FILE **/
+void opcode_swap(stack_t **, unsigned int);
+
 /** OP_MUL_DIV.C FILE **/
 /* void opcode_div(stack_t **, unsigned int); */
 /* void opcode_mul(stack_t **, unsigned int); */
