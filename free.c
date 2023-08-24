@@ -1,5 +1,4 @@
 #include "main.h"
-global_str stru;
 
 /**
  * f_stack - This is a function that free the stack
@@ -9,23 +8,17 @@ global_str stru;
  */
 void f_stack(stack_t *h)
 {
-	stack_t *prev, *tmp = h;
+	stack_t *next, *tmp = h;
 
-	while (tmp)
+	if (h)
 	{
-		prev = tmp;
-		tmp = tmp->next;
-		free(prev);
+		next = h->next;
+		while (tmp)
+		{
+			free(tmp);
+			tmp = next;
+			if (next)
+				next = next->next;
+		}
 	}
-}
-/**
- * free_glob - This is a function that free the global structure
- *
- * Return: This is a function that return void (nothing)
- */
-void free_glob(void)
-{
-	fclose(stru.file);
-	free(stru.buffer);
-	f_stack(stru.stack);
 }

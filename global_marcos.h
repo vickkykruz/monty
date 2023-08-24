@@ -56,12 +56,8 @@ typedef struct instruction_s
  */
 typedef struct global_s
 {
-	char *buffer;
-	char *str;
-	FILE *file;
-	int isstack;
-	stack_t *stack;
-} global_str;
-
-extern global_str stru;
+	char *args;
+	int data;
+} global_s;
+global_s global_stru;
 #endif

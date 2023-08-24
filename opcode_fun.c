@@ -1,24 +1,38 @@
 #include "main.h"
 /**
- * get_opcode_fun - This is a function that return the associated function to
+ * analysis_opcode - This is a function that return the associated function to
  * an opcode
- * @opcode: This is an argument that reprsent the opcode passed
- * @cmd_line: This is an argument that reprsent the given command line
+ * @stack: This is an argument that reprsent the opcode passed
+ * @s: This is an argument that reprsent the given string
+ * @l_cnt: This is an argument that reprsent the given command line
  *
  * Return: This function return the function assocaited to the opcode
  */
-void (*get_opcode_fun(char *opcode, unsigned int cmd_line))(stack_t **, unsigned int)
+void analysis_opcode(stack_t **stack, char *s, unsigned int l_cnt)
 {
 	instruction_t opts[] = OPCODE;
-	int i, compar;
+	int i = 0;
 
-	for (i = 0; opts[i].opcode; i++)
+	if (!strcmp(s, "stack"))
 	{
-		compar = strcmp(opcode, opts[i].opcode);
-		if (compar == 0)
-			return (opts[i].f);
+		global_stru.data = 1;
+		return;
+	}
+	if (!strcmp(s, "queue"))
+	{
+		global_stru.data = 0;
+		return;
+	}
+	while (opts[i].opcode)
+	{
+		if (strcmp(opts[i].opcode, s) == 0)
+		{
+			opts[i].f(stack, l_cnt);
+			return;
+		}
+		i++;
 	}
 
-	fprintf(stderr, "L<%d>: unknown instruction <%s>\n", cmd_line, opcode);
+	fprintf(stderr, "L<%d>: unknown instruction <%s>\n", l_cnt, s);
 	exit(EXIT_FAILURE);
 }

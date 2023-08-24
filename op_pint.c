@@ -1,24 +1,18 @@
 #include "main.h"
 /**
- * opcode_pint - This is a function that return the printed value at the top
- * of the stack
+ * pint - This is a function that return the printed value at the to of the
+ * stack
  * @stack: This is an argument that reprsent the given stack
- * @cmd_line: This is an argument reprsent the command line passed
+ * @cmd_line: This is an argument that reprsent the amount of lines passed
  *
- * Return: This function return a void (nothing)
+ * Return: This function return a void
  */
 void opcode_pint(stack_t **stack, unsigned int cmd_line)
 {
-	stack_t *tmp = *stack;
-
-	if (!tmp)
+	if (!stack || !(*stack))
 	{
-		free_glob();
-		fprintf(stderr, "L<%d>: can't pint, stack empty\n", cmd_line);
+		fprintf(stderr, "L%d: can't pint, stack empty\n", cmd_line);
 		exit(EXIT_FAILURE);
 	}
-
-	for (; tmp->next; tmp = tmp->next)
-		;
-	printf("%d\n", tmp->n);
+	printf("%d\n", (*stack)->n);
 }

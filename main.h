@@ -8,22 +8,21 @@
 #include <fcntl.h>
 #include <string.h>
 #include <stddef.h>
+#include <ctype.h>
 #include "global_marcos.h"
 
 /** Prototypes **/
 
-/** INITIZATED_FILE.C FILE **/
-void analysis_file(char *dir);
-
-/** INITIZATED_GLOBAL_STR.C FILE **/
-void initizated_global(FILE *, stack_t *, char *, char *, int);
-
 /** OPCODE_FUN.C FILE **/
-void (*get_opcode_fun(char *, unsigned int))(stack_t **stack, unsigned int);
+void analysis_opcode(stack_t **stack, char *s, unsigned int l_cnt);
+
+/** LISTS.C FILE **/
+stack_t *add_node(stack_t **stack, const int num);
+stack_t *queue_node(stack_t **stack, const int num);
+size_t print_stack(const stack_t *stack);
 
 /** FREE.C FILE **/
 void f_stack(stack_t *);
-void free_glob(void);
 
 /** OP_PUSH_PALL.C FILE **/
 void opcode_push(stack_t **, unsigned int);
@@ -40,7 +39,5 @@ void opcode_pop(stack_t **, unsigned int);
 /* void opcode_mul(stack_t **, unsigned int); */
 
 /** FUNC.C FILE **/
-void is_digit(unsigned int);
-char *_itoa(int);
-void push_queue(stack_t **, int);
+int is_digit(char *str);
 #endif
