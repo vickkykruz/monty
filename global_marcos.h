@@ -15,6 +15,8 @@
 	{"add", opcode_add}, \
 	{"nop", opcode_nop}, \
 	{"sub", opcode_sub}, \
+	{"div", opcode_div}, \
+	{"mul", opcode_mul}, \
 	{NULL, NULL}, \
 }
 /**

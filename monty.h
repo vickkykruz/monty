@@ -45,8 +45,8 @@ void opcode_add(stack_t **, unsigned int);
 void opcode_sub(stack_t **, unsigned int);
 
 /** OP_MUL_DIV.C FILE **/
-/* void opcode_div(stack_t **, unsigned int); */
-/* void opcode_mul(stack_t **, unsigned int); */
+void opcode_div(stack_t **, unsigned int);
+void opcode_mul(stack_t **, unsigned int);
 
 /** FUNC.C FILE **/
 int is_digit(char *str);
