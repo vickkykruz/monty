@@ -3,7 +3,7 @@
  * opcode_mul - This is a function that return the multiped top next elememt
  * of the stack
  * @stack: This is an argument that reprsent the givem stack
- * @l_cnt: This is an argumemt that reprsent the amount of argument passed
+ * @l_cnt: an argumemt that reprsent the amount of argument passed
  *
  * Return: This function return a void (nothing)
  */
