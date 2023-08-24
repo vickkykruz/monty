@@ -14,6 +14,7 @@
 	{"swap", opcode_swap}, \
 	{"add", opcode_add}, \
 	{"nop", opcode_nop}, \
+	{"sub", opcode_sub}, \
 	{NULL, NULL}, \
 }
 /**

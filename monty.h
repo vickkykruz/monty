@@ -41,6 +41,9 @@ void opcode_swap(stack_t **, unsigned int);
 void opcode_nop(stack_t **, unsigned int);
 void opcode_add(stack_t **, unsigned int);
 
+/** OP_SUB.C FILE **/
+void opcode_sub(stack_t **, unsigned int);
+
 /** OP_MUL_DIV.C FILE **/
 /* void opcode_div(stack_t **, unsigned int); */
 /* void opcode_mul(stack_t **, unsigned int); */
