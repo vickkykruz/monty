@@ -13,7 +13,7 @@ void opcode_add(stack_t **stack, unsigned int l_cnt)
 
 	if (!stack || !(*stack) || !((*stack)->next))
 	{
-		fprintf(stderr, "L<%d>: can't add, stack too short\n", l_cnt);
+		fprintf(stderr, "L%d: can't add, stack too short\n", l_cnt);
 		exit(EXIT_FAILURE);
 	}
 
