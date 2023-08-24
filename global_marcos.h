@@ -12,6 +12,8 @@
 	{"pint", opcode_pint}, \
 	{"pop", opcode_pop}, \
 	{"swap", opcode_swap}, \
+	{"add", opcode_add}, \
+	{"nop", opcode_nop}, \
 	{NULL, NULL}, \
 }
 /**
