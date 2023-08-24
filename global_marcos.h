@@ -19,6 +19,8 @@
 	{"mul", opcode_mul}, \
 	{"mod", opcode_mod}, \
 	{"pstr", opcode_pstr}, \
+	{"rotl", opcode_rotl}, \
+	{"rotr", opcode_rotr}, \
 	{NULL, NULL}, \
 }
 /**

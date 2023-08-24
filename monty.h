@@ -54,6 +54,10 @@ void opcode_pstr(stack_t **, unsigned int);
 /** OP_MOD.C FILE **/
 void opcode_mod(stack_t **, unsigned int);
 
+/** OP_ROTL_ROTR.C FILE **/
+void opcode_rotl(stack_t **, unsigned int);
+void opcode_rotr(stack_t **, unsigned int);
+
 /** FUNC.C FILE **/
 int is_digit(char *str);
 #endif
