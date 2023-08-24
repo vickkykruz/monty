@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * opcode_push - This is a function that return the pushed element to stack
+ * opcode_push - This is a function tht return the pushed element to stack
  * @stack: This is an argument that reprsent the given stack
  * @cmd_line: This is an argument that reprsent the given number of cmd line
  *
