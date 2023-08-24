@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * opcode_swap - This is a function that return the top to the prev
+ * opcode_swap - This is a function that returns the top to the prev
  * @stack: This is an argument that reprsent the given stack
  * @l_cnt: This is an argument that reprsent the amount of lines passed
  *
