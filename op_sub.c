@@ -16,6 +16,7 @@ void opcode_sub(stack_t **stack, unsigned int l_cnt)
 		exit(EXIT_FAILURE);
 	}
 
+
 	num = ((*stack)->next->n) - ((*stack)->n);
 	opcode_pop(stack, l_cnt);
 	(*stack)->n = num;
