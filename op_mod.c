@@ -3,7 +3,7 @@
  * opcode_mod - This is a function thay return the module of top next of the
  * stack
  * @stack: This is an argument that reprsent the given stack
- * @l_cnt: This is an argument that reprsent the amount of argumemt passed
+ * @l_cnt: an argument that reprsent the amount of argumemt passed
  *
  * Return: This function return a void (nothing)
  */
